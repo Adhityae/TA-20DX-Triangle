@@ -17,3 +17,7 @@
 
 # Untuk pindah branch
 # PS E:\laragon\www\TA-20DX-Triangle> git checkout (Nama branch)
+
+# Untuk pull data project
+# PS E:\laragon\www\TA-20DX-Triangle> git pull origin (Nama branch)
+# NB: Jangan lupa pull terlebih dahulu project Master
