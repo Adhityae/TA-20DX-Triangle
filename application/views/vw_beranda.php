@@ -10,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>memorial books</title>
+      <title>Our Teacher</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                           <div class="logo"> <a href="index.html"><img src="images/logos.png" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -54,7 +54,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main">
-                                 <li class="active"> <a href="index.html">Home</a> </li>
+                                 <li class="active"> <a href="index.html">Beranda</a> </li>
                                  <li> <a href="about.html">About us</a> </li>
                                  <li><a href="books.html">Our Books</a></li>
                                  <li><a href="library.html">library</a></li>
@@ -77,12 +77,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="images/banner.jpg" alt="First slide">
+                  <img class="first-slide" src="images/banner1.png" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
-                        <h1>The Best Libraries That<br> Every Book Lover Must<br> Visit!</h1>
-                        <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation </p>
-                        <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
+                        <h1>Selamat Datang Di Our Teacher<br> Sesuaikan Kebutuhan Belajar Bersama Kami</h1>
+                        <p>Anda dapat memilih program belajar<br> dan mengatur jumlah pertemuan<br> sesuai keinginan Anda</p>
+                        <div class="button_section"> <a class="main_bt" href="#">Ikuti Sekarang</a>  </div>
                         <ul class="locat_icon">
                            <li> <a href="#"><img src="icon/facebook.png"></a></li>
                            <li> <a href="#"><img src="icon/Twitter.png"></a></li>
@@ -92,48 +92,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      </div>
                   </div>
                </div>
-               <div class="carousel-item">
-                  <img class="second-slide" src="images/banner.jpg" alt="Second slide">
-                  <div class="container">
-                     <div class="carousel-caption relative">
-                        <h1>The Best Libraries That<br> Every Book Lover Must<br> Visit!</h1>
-                        <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation </p>
-                        <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
-                        <ul class="locat_icon">
-                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <img class="third-slide" src="images/banner.jpg" alt="Third slide">
-                  <div class="container">
-                     <div class="carousel-caption relative">
-                        <h1>The Best Libraries That<br> Every Book Lover Must<br> Visit!</h1>
-                        <p>adipiscing elit, sed do eiusmod tempor incididunt ut<br> labore et dolore magna aliqua. Ut enim ad minim<br> veniam, quis nostrud exercitation </p>
-                        <div class="button_section"> <a class="main_bt" href="#">Read More</a>  </div>
-                        <ul class="locat_icon">
-                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-         </div>
       </section>
       <!-- about -->
       <div class="about">
