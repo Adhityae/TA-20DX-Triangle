@@ -59,7 +59,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li><a href="books.html">Cari Pengajar</a></li>
                                  <li><a href="library.html">Blog</a></li>
                                  <li><a href="contact.html">Tentang Kami</a></li>
-                                 <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/SignIn">Login</a></li>
+                                 <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
+                                 <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
+                                  <!-- Nav Item - User Information -->
+                                  <li class="nav-item dropdown no-arrow">
+                                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-profile rounded-circle"
+                                src="images/top-icon.png" alt="#" />
+                                  </a>
+                                  <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                                </div>
+                                </li>
                               </ul>
                            </nav>
                         </div>
@@ -201,6 +228,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
          </div>
       </footer>
+
+
       <!-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
