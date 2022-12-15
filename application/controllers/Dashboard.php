@@ -7,4 +7,9 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('vw_beranda');
 	}
+
+	public function SignIn()
+	{
+		$this->load->view('signin');
+	}
 }
