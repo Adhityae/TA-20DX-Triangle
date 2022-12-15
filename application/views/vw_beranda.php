@@ -53,24 +53,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <div class="menu-area">
                         <div class="limit-box">
                            <nav class="main-menu">
-                              <ul class="menu-area-main">
+                              <ul class="menu-area-main" >
                                  <li class="active"> <a href="index.html">Beranda</a> </li>
-                                 <li> <a href="about.html">About us</a> </li>
-                                 <li><a href="books.html">Our Books</a></li>
-                                 <li><a href="contact.html">Contact us</a></li>
+                                 <li> <a href="about.html">Biaya Les</a> </li>
+                                 <li><a href="books.html">Cari Pengajar</a></li>
+                                 <li><a href="library.html">Blog</a></li>
+                                 <li><a href="contact.html">Tentang Kami</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/SignIn">Login</a></li>
                                  <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
-
                                   <!-- Nav Item - User Information -->
-                        <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                  <li class="nav-item dropdown no-arrow">
+                                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <img class="img-profile rounded-circle"
                                 src="images/top-icon.png" alt="#" />
-                            </a>
-                            <!-- Dropdown - User Information -->
-                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                  </a>
+                                  <!-- Dropdown - User Information -->
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="#">
                                     <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -85,9 +85,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                                     Logout
                                 </a>
-                            </div>
-                        </li>
-
+                                </div>
+                                </li>
                               </ul>
                            </nav>
                         </div>
@@ -109,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <div class="carousel-caption relative">
                         <h1>Selamat Datang Di Our Teacher<br> Sesuaikan Kebutuhan Belajar Bersama Kami</h1>
                         <p>Anda dapat memilih program belajar<br> dan mengatur jumlah pertemuan<br> sesuai keinginan Anda</p>
-                        <div class="button_section"> <a class="main_bt" href="#">Ikuti Sekarang</a>  </div>
+                        <div class="button_section"> <a class="main_bt" href="#">Pesan Sekarang</a>  </div>
                         <ul class="locat_icon">
                            <li> <a href="#"><img src="icon/facebook.png"></a></li>
                            <li> <a href="#"><img src="icon/Twitter.png"></a></li>
@@ -120,76 +119,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
                </div>
       </section>
-      <!-- about -->
-      <div class="about">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="aboutheading">
-                     <h2>About <strong class="black">Us</strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span>
-                  </div>
-               </div>
-            </div>
-            <div class="row border">
-               <div class="col-xl-7 col-lg-7 col-md-12 col-sm-12">
-                  <div class="about-box">
-                     <p> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-                     <a href="#">Read More</a>
-                  </div>
-               </div>
-               <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12">
-                  <div class="about-box">
-                     <figure><img src="images/about.png" alt="img" /></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      
-      <!-- end about -->
-      <!-- Library -->
-      <div class="Library">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage">
-                     <h2>Our <strong class="black">Library </strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="bg">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-10 offset-md-1">
-                     <div class="Library-box">
-                        <figure><img src="images/Library-.jpg" alt="#"/></figure>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="read-more">
-                     <a href="#">Read More</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end Library -->
       <!--Books -->
       <div class="Books">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <div class="titlepage">
-                     <h2>Our <strong class="black">Books </strong></h2>
-                     <span>adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</span> 
+                  <div class="titlepage"><br>
+                     <h2>Mengapa Perlu Belajar Bersama<strong class="black"> Our Teacher?</strong></h2>
+                     <span>Keunggulan Our Teacher dari Pusat Les Privat Lainnya</span> 
                   </div>
                </div>
             </div>
@@ -199,7 +136,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <figure><img src="images/book-1.jpg" alt="img"/></figure>
                   </div>
                </div>
-               <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
                      <figure><img src="images/book-2.jpg" alt="img"/></figure>
                   </div>
@@ -209,15 +146,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <figure><img src="images/book-1.jpg" alt="img"/></figure>
                   </div>
                </div>
+               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                  <div class="book-box">
+                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                  </div>
+               </div>
                <div class="col-md-6 offset-md-3">
-                  <p>magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco laboris</p>
+                  <p>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</p>
                </div>
             </div>
             <div class="container">
                <div class="row">
                   <div class="col-md-12">
                      <div class="read-more">
-                        <a href="#">Read More</a>
+                        <a href="#">Pesan Sekarang</a>
                      </div>
                   </div>
                </div>
@@ -231,7 +173,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage3">
-                     <h2>Contact</h2>
+                     <h2>Hubungi Kami</h2>
                   </div>
                </div>
             </div>
@@ -240,21 +182,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <form>
                      <div class="row">
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <input class="form-control" placeholder="Name" type="Name">
+                           <input class="form-control" placeholder="Nama" type="Nama">
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <input class="form-control" placeholder="Phone Number" type="Phone Number">
+                           <input class="form-control" placeholder="Nomor Telepon" type="Nohp">
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                            <input class="form-control" placeholder="Email" type="Email">
                         </div>
                         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <textarea class="textarea" placeholder="Message">Message</textarea>
+                           <textarea class="textarea" placeholder="Pesan"></textarea>
                         </div>
                      </div>
                   </form>
                </div>
-               <button class="send-btn">Send</button>
+               <button class="send-btn">Kirim</button>
             </div>
          </div>
       </div>
@@ -266,7 +208,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                <div class="row pdn-top-30">
                   <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
                      <div class="Follow">
-                        <h3>Follow Us</h3>
+                        <h3>Ikuti Kami</h3>
                      </div>
                      <ul class="location_icon">
                         <li> <a href="#"><img src="icon/facebook.png"></a></li>
@@ -277,17 +219,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
                      <div class="Follow">
-                        <h3>Newsletter</h3>
+                        <h3>Dapatkan info seputar bimbingan kami</h3>
                      </div>
-                     <input class="Newsletter" placeholder="Enter your email" type="Enter your email">
+                     <input class="Newsletter" placeholder="Masukan Email" type="Enter your email">
                      <button class="Subscribe">Subscribe</button>
                   </div>
                </div>
-            </div>
-         </div>
-         <div class="copyright">
-            <div class="container">
-               <p>Copyright 2019 All Right Reserved By <a href="https://html.design/">Free html Templates</a></p>
             </div>
          </div>
       </footer>
