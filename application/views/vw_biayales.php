@@ -24,6 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <link rel="icon" href="images/fevicon.png" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
       <!-- Tweaks for older IEs-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,12 +55,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main" >
-                                 <li class="active"> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
+                                 <li> <a href="index.html">Beranda</a> </li>
+                                 <li class="active"> <a href="biayales.html">Biaya Les</a> </li>
                                  <li><a href="books.html">Cari Pengajar</a></li>
                                  <li><a href="library.html">Blog</a></li>
                                  <li><a href="contact.html">Tentang Kami</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/SignIn">Login</a></li>
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
                                  <!-- Nav Item - User Information -->

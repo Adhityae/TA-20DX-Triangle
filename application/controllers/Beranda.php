@@ -8,8 +8,13 @@ class Beranda extends CI_Controller {
 		$this->load->view('vw_beranda');
 	}
 
-	public function SignIn()
+	function biayales()
 	{
-		$this->load->view('signin');
+		$this->load->view('vw_biayales');
+	}
+
+	function signin()
+	{
+		$this->load->view('vw_signin');
 	}
 }
