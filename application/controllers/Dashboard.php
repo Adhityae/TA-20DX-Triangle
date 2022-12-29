@@ -1,15 +1,12 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Dashboard extends CI_Controller {
 
-	public function index()
-	{
-		$this->load->view('vw_beranda');
-	}
+	
 
-	public function SignIn()
+	public function Login()
 	{
-		$this->load->view('signin');
+		$this->load->view('login');
 	}
 }

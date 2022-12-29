@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href='<?php echo base_url('assets/css/bootstrap.min.css'); ?>' />
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href='<?php echo base_url('assets/css/style.css'); ?>' />
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href='<?php echo base_url('assets/css/responsive.css'); ?>' />
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href='<?php echo base_url('assets/images/fevicon.png'); ?>' type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <link rel="stylesheet" href='<?php echo base_url('assets/css/jquery.mCustomScrollbar.min.css'); ?>' />
       <!-- Tweaks for older IEs-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -58,7 +58,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li> <a href="about.html">About us</a> </li>
                                  <li><a href="books.html">Our Books</a></li>
                                  <li><a href="contact.html">Contact us</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/SignIn">Login</a></li>
+                                 <li class="nav-item active">
+                                    <a class="nav-link" href="<?php echo base_url("Beranda/SignIn") ?>">
+                                       Login</a>
+                                 </li>
                                  <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li>
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
 

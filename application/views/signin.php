@@ -10,13 +10,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <!-- General CSS Files -->
-        <link rel="stylesheet" href="TA-20DX-Triangle/css/bootstrap.css">
-        <link rel="stylesheet" href="TA-20DX-Triangle/fonts/all.min.css">
-        <link rel="stylesheet" href="TA-20DX-Triangle/fonts/font-awesome.min.css">
+        <link rel="stylesheet" href='<?php echo base_url('assets/css/bootstrap.css'); ?>' />
+        <link rel="stylesheet" href='<?php echo base_url('assets/css/style.css'); ?>' />
+        <link rel="stylesheet" href='<?php echo base_url('assets/css/slick.css'); ?>' />
+        <link rel="stylesheet" href='<?php echo base_url('assets/css/responsive.css'); ?>' />
+        <link rel="stylesheet" href='<?php echo base_url('assets/fonts/all.min.css'); ?>' />
+        <link rel="stylesheet" href='<?php echo base_url('assets/fonts/font-awesome.min.css'); ?>' />
 
-        <link rel="preconnect" href="TA-20DX-Triangle\fonts\fonts.googleapis.com">
-        <link rel="preconnect" href="TA-20DX-Triangle\fonts\fonts.googleapis.com" crossorigin="">
-        <link href="TA-20DX-Triangle\fonts\fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet">
+        <link rel="preconnect" href="fonts/fonts.googleapis.com">
+        <link rel="preconnect" href="fonts/fonts.googleapis.com" crossorigin="">
+        <link href="fonts/fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet">
 
         <style>
             *{

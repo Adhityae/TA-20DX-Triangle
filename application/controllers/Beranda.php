@@ -10,6 +10,9 @@ class Beranda extends CI_Controller {
 
 	public function SignIn()
 	{
+		
 		$this->load->view('signin');
+		$this->load->helper('url');
 	}
+
 }
