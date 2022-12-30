@@ -15,16 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- bootstrap css -->
-      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>">
       <!-- style css -->
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>">
       <!-- Responsive-->
-      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/responsive.css"); ?>">
       <!-- fevicon -->
-      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif">
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>">
       <!-- Tweaks for older IEs-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -33,9 +32,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
    <!-- body -->
    <body class="main-layout home_page">
       <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
-      </div>
+      <!-- <div class="loader_bg">
+         <div class="loader"><img src="assets/images/loading.gif" alt="#" /></div>
+      </div> -->
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -46,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="images/logos.png" alt="#"></a> </div>
+                           <div class="logo"> <a href="index.html"><img src="assets/images/logos.png" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -55,17 +54,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main" >
-                                 <li> <a href="index.html">Beranda</a> </li>
-                                 <li class="active"> <a href="biayales.html">Biaya Les</a> </li>
+                                 <li> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
+                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="books.html">Cari Pengajar</a></li>
                                  <li><a href="library.html">Blog</a></li>
                                  <li><a href="contact.html">Tentang Kami</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/SignIn">Login</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
                                  <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
                                  <!-- Nav Item - User Information -->
                                  <li class="nav-item dropdown no-arrow">
-                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-profile rounded-circle"src="images/top-icon.png" alt="#" /></a>
+                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-profile rounded-circle"src="assets/images/top-icon.png" alt="#" /></a>
                                     <!-- Dropdown - User Information -->
                                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
                                        <a class="dropdown-item" href="#">
@@ -93,17 +92,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="images/banner1.png" alt="First slide">
+                  <img class="first-slide" src="assets/images/banner1.png" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Selamat Datang Di Our Teacher<br> Sesuaikan Kebutuhan Belajar Bersama Kami</h1>
                         <p>Anda dapat memilih program belajar<br> dan mengatur jumlah pertemuan<br> sesuai keinginan Anda</p>
                         <div class="button_section"> <a class="main_bt" href="#">Pesan Sekarang</a>  </div>
                         <ul class="locat_icon">
-                           <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                           <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                           <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                           <li> <a href="#"><img src="assets/icon/facebook.png"></a></li>
+                           <li> <a href="#"><img src="assets/icon/Twitter.png"></a></li>
+                           <li> <a href="#"><img src="assets/icon/linkedin.png"></a></li>
+                           <li> <a href="#"><img src="assets/icon/instagram.png"></a></li>
                         </ul>
                      </div>
                   </div>
@@ -123,22 +122,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row box">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="images/book-2.jpg" alt="img"/></figure>
+                     <figure><img src="assets/images/book-2.jpg" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-md-6 offset-md-3">
@@ -201,10 +200,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <h3>Ikuti Kami</h3>
                      </div>
                      <ul class="location_icon">
-                        <li> <a href="#"><img src="icon/facebook.png"></a></li>
-                        <li> <a href="#"><img src="icon/Twitter.png"></a></li>
-                        <li> <a href="#"><img src="icon/linkedin.png"></a></li>
-                        <li> <a href="#"><img src="icon/instagram.png"></a></li>
+                        <li> <a href="#"><img src="assets/icon/facebook.png"></a></li>
+                        <li> <a href="#"><img src="assets/icon/Twitter.png"></a></li>
+                        <li> <a href="#"><img src="assets/icon/linkedin.png"></a></li>
+                        <li> <a href="#"><img src="assets/icon/instagram.png"></a></li>
                      </ul>
                   </div>
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -222,13 +221,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/popper.min.js"></script>
+      <script src="assets/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/js/jquery-3.0.0.min.js"></script>
+      <script src="assets/js/plugin.js"></script>
       <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
+      <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="assets/js/custom.js"></script>
    </body>
 </html>

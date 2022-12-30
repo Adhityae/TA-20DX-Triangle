@@ -10,13 +10,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <!-- General CSS Files -->
-        <link rel="stylesheet" href="TA-20DX-Triangle/css/bootstrap.css">
-        <link rel="stylesheet" href="TA-20DX-Triangle/fonts/all.min.css">
-        <link rel="stylesheet" href="TA-20DX-Triangle/fonts/font-awesome.min.css">
+        <!-- bootstrap css -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>">
+      <!-- style css -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/responsive.css"); ?>">
+      <!-- fevicon -->
+      <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>">
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
-        <link rel="preconnect" href="TA-20DX-Triangle\fonts\fonts.googleapis.com">
-        <link rel="preconnect" href="TA-20DX-Triangle\fonts\fonts.googleapis.com" crossorigin="">
-        <link href="TA-20DX-Triangle\fonts\fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>">
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome.min.css"); ?>">
+
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>">
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>">
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts.googleapis.com/css2?family=Inter&amp;display=swap"); ?>">
 
         <style>
             *{
@@ -91,13 +106,13 @@
         <div class="row">
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
-                    <img src="images/logos.png" alt="logo-min" style="display: block;margin-bottom: 2em">
-                    <img src="images/login.png" alt="images-login" style="width: 80%">
+                    <img src="assets/images/logos.png" alt="logo-min" style="display: block;margin-bottom: 2em">
+                    <img src="assets/images/login.png" alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
                 <form id="form_login" action="TA-20DX-Triangle/login_action" method="POST">
-                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">                           <div class="mb-4">
+                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR"><div class="mb-4">
                         <h5 class="text-center mb-1" style="color: black;font-weight: 600">Masuk</h5>
                         <p class="text-center text-muted" style="font-size: small">Pilih Tipe Akun Anda</p>
                     </div>
@@ -119,7 +134,7 @@
                             <div class="card card-check " id="guru">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="images/guru.png" style="max-height: 60px">
+                                        <img src="assets/images/guru.png" style="max-height: 60px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_guru" value="guru">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Tutor</h5>
@@ -184,9 +199,9 @@
         </div>
     </section>
     <!-- General JS Scripts -->
-    <script src="TA-20DX-Triangle/js/jquery.min.js"></script>
-    <script src="TA-20DX-Triangle/js/popper.js"></script>
-    <script src="TA-20DX-Triangle/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function (){
        $('.section').css('min-height', screen.height);
