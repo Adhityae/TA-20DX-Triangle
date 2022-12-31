@@ -11,27 +11,27 @@
 
         <!-- General CSS Files -->
         <!-- bootstrap css -->
-      <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>" />
       <!-- style css -->
-      <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
       <!-- Responsive-->
-      <link rel="stylesheet" href="<?php echo base_url("assets/css/responsive.css"); ?>">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/responsive.css"); ?>" />
       <!-- fevicon -->
-      <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif">
+      <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>">
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>" />
       <!-- Tweaks for older IEs-->
       <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
-        <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>">
-        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>">
-        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome.min.css"); ?>">
+        <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome.min.css"); ?>" />
 
-        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>">
-        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>">
-        <link rel="stylesheet" href="<?php echo base_url("assets/fonts.googleapis.com/css2?family=Inter&amp;display=swap"); ?>">
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>" />
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts.googleapis.com/css2?family=Inter&amp;display=swap"); ?>" />
 
         <style>
             *{
@@ -106,8 +106,8 @@
         <div class="row">
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
-                    <img src="assets/images/logos.png" alt="logo-min" style="display: block;margin-bottom: 2em">
-                    <img src="assets/images/login.png" alt="images-login" style="width: 80%">
+                    <img src='<?php echo base_url("assets/images/logos.png"); ?>' alt="logo-min" style="display: block;margin-bottom: 2em">
+                    <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
@@ -121,7 +121,7 @@
                             <div class="card card-check " id="siswa">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="images/siswa.png" style="max-height: 60px">
+                                        <img src='<?php echo base_url("images/siswa.png"); ?>' style="max-height: 60px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_siswa" value="siswa">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Siswa</h5>
@@ -134,7 +134,7 @@
                             <div class="card card-check " id="guru">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="assets/images/guru.png" style="max-height: 60px">
+                                        <img src="<?php echo base_url("assets/images/guru.png"); ?>" style="max-height: 60px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_guru" value="guru">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Tutor</h5>

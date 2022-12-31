@@ -32,9 +32,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
    <!-- body -->
    <body class="main-layout home_page">
       <!-- loader  -->
-      <!-- <div class="loader_bg">
-         <div class="loader"><img src="assets/images/loading.gif" alt="#" /></div>
-      </div> -->
+      <div class="loader_bg">
+         <div class="loader"><img src="<?php echo base_url("assets/images/loading.gif"); ?>" alt="#" /></div>
+      </div>
       <!-- end loader -->
       <!-- header -->
       <header>
@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="assets/images/logos.png" alt="#"></a> </div>
+                           <div class="logo"> <a href="index.html"><img src="<?php echo base_url("assets/images/logos.png"); ?>" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>
@@ -92,7 +92,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="first-slide" src="assets/images/banner1.png" alt="First slide">
+                  <img class="first-slide" src="<?php echo base_url("assets/images/banner1.png"); ?>" alt="First slide">
                   <div class="container">
                      <div class="carousel-caption relative">
                         <h1>Selamat Datang Di Our Teacher<br> Sesuaikan Kebutuhan Belajar Bersama Kami</h1>
@@ -122,22 +122,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row box">
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="<?php echo base_url("assets/images/book-1.jpg"); ?>" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="assets/images/book-2.jpg" alt="img"/></figure>
+                     <figure><img src="<?php echo base_url("assets/images/book-2.jpg"); ?>" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="<?php echo base_url("assets/images/book-1.jpg"); ?>" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
                   <div class="book-box">
-                     <figure><img src="assets/images/book-1.jpg" alt="img"/></figure>
+                     <figure><img src="<?php echo base_url("assets/images/book-1.jpg"); ?>" alt="img"/></figure>
                   </div>
                </div>
                <div class="col-md-6 offset-md-3">
@@ -200,10 +200,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <h3>Ikuti Kami</h3>
                      </div>
                      <ul class="location_icon">
-                        <li> <a href="#"><img src="assets/icon/facebook.png"></a></li>
-                        <li> <a href="#"><img src="assets/icon/Twitter.png"></a></li>
-                        <li> <a href="#"><img src="assets/icon/linkedin.png"></a></li>
-                        <li> <a href="#"><img src="assets/icon/instagram.png"></a></li>
+                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/facebook.png"); ?>"></a></li>
+                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/Twitter.png"); ?>"></a></li>
+                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/linkedin.png"); ?>"></a></li>
+                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/instagram.png"); ?>"></a></li>
                      </ul>
                   </div>
                   <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
@@ -221,13 +221,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
       <!-- end footer -->
       <!-- Javascript files-->
-      <script src="assets/js/jquery.min.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/jquery-3.0.0.min.js"></script>
-      <script src="assets/js/plugin.js"></script>
+      <script src='<?php echo base_url("assets/js/jquery.min.js"); ?>'></script>
+      <script src='<?php echo base_url("assets/js/popper.min.js"); ?>'></script>
+      <script src='<?php echo base_url("assets/js/bootstrap.bundle.min.js"); ?>'></script>
+      <script src='<?php echo base_url("assets/js/jquery-3.0.0.min.js"); ?>'></script>
+      <script src='<?php echo base_url("assets/js/plugin.js"); ?>'></script>
       <!-- sidebar -->
-      <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="assets/js/custom.js"></script>
+      <script src='<?php echo base_url("assets/js/jquery.mCustomScrollbar.concat.min.js"); ?>'></script>
+      <script src='<?php echo base_url("assets/js/custom.js"); ?>'></script>
    </body>
 </html>
