@@ -45,7 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
                      <div class="full">
                         <div class="center-desk">
-                           <div class="logo"> <a href="index.html"><img src="<?php echo base_url("assets/images/logos.png"); ?>" alt="#"></a> </div>
+                           <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logo1.svg"); ?>" alt="#"></a> </div>
                         </div>
                      </div>
                   </div>

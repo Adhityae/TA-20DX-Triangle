@@ -106,8 +106,8 @@
         <div class="row">
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
-                    <img src='<?php echo base_url("assets/images/logos.png"); ?>' alt="logo-min" style="display: block;margin-bottom: 2em">
-                    <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
+                <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logos1.png"); ?>" alt="#" style="width: 40%"></a> </div>
+                <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
@@ -121,7 +121,7 @@
                             <div class="card card-check " id="siswa">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src='<?php echo base_url("images/siswa.png"); ?>' style="max-height: 60px">
+                                        <img src='<?php echo base_url("assets/images/siswa.png"); ?>' style="max-height: 40px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_siswa" value="siswa">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Siswa</h5>
@@ -134,7 +134,7 @@
                             <div class="card card-check " id="guru">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="<?php echo base_url("assets/images/guru.png"); ?>" style="max-height: 60px">
+                                        <img src="<?php echo base_url("assets/images/guru.png"); ?>" style="max-height: 40px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_guru" value="guru">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Tutor</h5>
