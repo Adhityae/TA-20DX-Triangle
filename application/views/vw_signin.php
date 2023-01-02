@@ -106,7 +106,7 @@
         <div class="row">
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
-                <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logos1.png"); ?>" alt="#" style="width: 40%"></a> </div>
+                <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logo.svg"); ?>" alt="#" style="width: 100%"></a> </div>
                 <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
@@ -175,7 +175,7 @@
                         <a href="TA-20DX-Triangle/forget-password" style="text-decoration: none;color:black;font-weight: 600"> Lupa Password ? </a>
                     </div>
                     <div class="form-group">
-                        <button type="button" id="button_login" class="btn btn-primary shadow-none btn-block" style="border-radius: 12px">
+                        <button type="button" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
                         Login
                         </button>
                         <br>

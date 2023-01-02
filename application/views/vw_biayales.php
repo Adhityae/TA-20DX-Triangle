@@ -99,10 +99,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <p>Anda dapat memilih program belajar<br> dan mengatur jumlah pertemuan<br> sesuai keinginan Anda</p>
                         <div class="button_section"> <a class="main_bt" href="#">Pesan Sekarang</a>  </div>
                         <ul class="locat_icon">
-                           <li> <a href="#"><img src="assets/icon/facebook.png"></a></li>
-                           <li> <a href="#"><img src="assets/icon/Twitter.png"></a></li>
-                           <li> <a href="#"><img src="assets/icon/linkedin.png"></a></li>
-                           <li> <a href="#"><img src="assets/icon/instagram.png"></a></li>
+                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/facebook.png"); ?>"></a></li>
+                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/instagram.png"); ?>"></a></li>
+                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/linkedin.png"); ?>"></a></li>
+                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/twitter.png"); ?>"></a></li>
                         </ul>
                      </div>
                   </div>
