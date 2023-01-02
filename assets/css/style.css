@@ -1664,7 +1664,7 @@ border: #fff solid 2px;
 color: #000;
 }
  .footer {
-     background: url(../images/footer-bg.jpg);
+     background: url(assets/images/footer.svg);
      padding-bottom: 35px;
      background-size: 100% 100%;
 background-repeat: no-repeat;

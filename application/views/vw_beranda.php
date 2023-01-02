@@ -217,8 +217,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
          </div>
       </footer>
-
-
       <!-- end footer -->
       <!-- Javascript files-->
       <script src='<?php echo base_url("assets/js/jquery.min.js"); ?>'></script>
