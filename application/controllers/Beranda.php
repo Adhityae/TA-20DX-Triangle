@@ -13,6 +13,11 @@ class Beranda extends CI_Controller {
 		$this->load->view('vw_biayales');
 	}
 
+	public function caripengajar()
+	{
+		$this->load->view('vw_caripengajar');
+	}
+
 	public function signin()
 	{
 		$this->load->view('vw_signin');

@@ -56,13 +56,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               <ul class="menu-area-main" >
                                  <li class="active"> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
-                                 <li><a href="books.html">Cari Pengajar</a></li>
-                                 <li><a href="library.html">Blog</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
                                  <li><a href="contact.html">Tentang Kami</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
-                                 <!-- <li class="mean-last"> <a href="#"><img src="images/search_icon.png" alt="#" /></a> </li> -->
-                                 <!-- <li class="mean-last"> <a href="#"><img src="images/top-icon.png" alt="#" /></a></li> -->
-                                 <!-- Nav Item - User Information -->
                                  <li class="nav-item dropdown no-arrow">
                                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-profile rounded-circle"src="assets/images/top-icon.png" alt="#" /></a>
                                     <!-- Dropdown - User Information -->
