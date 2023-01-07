@@ -20,6 +20,10 @@
       <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>" />
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
         <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
         <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>" />
@@ -107,7 +111,7 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <form id="form_login" action="TA-20DX-Triangle/login_action" method="POST">
+                <form id="form_login" action="<?php echo site_url("Beranda/ceklogin"); ?>" method="POST">
                     <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR"><div class="mb-4">
                         <h5 class="text-center mb-1" style="color: black;font-weight: 600">Masuk</h5>
                         <p class="text-center text-muted" style="font-size: small">Pilih Tipe Akun Anda</p>
@@ -144,17 +148,17 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-envelope">
-                                    <!-- ::before -->
+                                    ::before
                                 </i>
                             </span>
                         </div>
-                        <input type="text" name="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
+                        <input type="text" name="email" id="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
                     </div>
                     <div class="input-group mb-4" id="input-password">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-key">
-                                    <!-- ::before -->
+                                    ::before
                                 </i>
                             </span>
                         </div>
@@ -162,7 +166,7 @@
                         <div class="input-group-append">
                             <span class="input-group-text left-no-line" id="show-pass">
                                 <i class="fa fa-eye-slash">
-                                    <!-- ::before -->
+                                    ::before
                                 </i>
                             </span>
                         </div>
@@ -171,13 +175,13 @@
                         <a href="TA-20DX-Triangle/forget-password" style="text-decoration: none;color:black;font-weight: 600"> Lupa Password ? </a>
                     </div>
                     <div class="form-group">
-                        <button type="button" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
+                        <button type="submit" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
                         Login
                         </button>
                         <br>
                         <div class="text-center">
                             Belum punya akun ?
-                            <a href="<?= base_url() ?>index.php/Beranda/signup" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
+                            <a href="TA-20DX-Triangle/register" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
                         </div>
                     </div>
                 </form>

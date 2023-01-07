@@ -54,12 +54,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main" >
-                              <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                              <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
-                              <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                              <li><a href="<?= base_url() ?>index.php/Beranda/tentangkami">Tentang Kami</a></li>
-                              <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
-                              <li><a href="<?= base_url() ?>index.php/Beranda/signup">Daftar</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
+                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
+                                 <li><a href="contact.html">Tentang Kami</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
+                                 <li class="nav-item dropdown no-arrow">
+                                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><img class="img-profile rounded-circle"src="assets/images/top-icon.png" alt="#" /></a>
+                                    <!-- Dropdown - User Information -->
+                                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"aria-labelledby="userDropdown">
+                                       <a class="dropdown-item" href="#">
+                                       <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Profile</a>
+                                       <a class="dropdown-item" href="#">
+                                       <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>Settings</a>
+                                       <div class="dropdown-divider"></div>
+                                       <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                       <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Logout</a>
+                                    </div>
+                                 </li>
                               </ul>
                            </nav>
                         </div>
@@ -107,138 +119,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                <div class="col-md-6 offset-md-3">
                   <p>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</p>
                </div>
-               <form id="form_cek_paket">
-                  <div class="form-row mb-2">
-                     <div class="col-md-3" id="place_program">
-                        <label>Program</label>
-                        <select class="custom-select shadow-none" name="jenjang_id" id="jenjang_id" onchange="change_jenjang()">
-                           <option disabled="" selected="">Pilih Program</option>
-                           <option value="11">Toddler</option>
-                           <option value="12">Playgroup</option>
-                           <option value="13">TK</option>
-                           <option value="14">SD</option>
-                           <option value="15">SMP</option>
-                           <option value="16">SMA</option>
-                           <option value="17">SMK</option>
-                           <option value="18">Bahasa Asing</option>
-                           <option value="23">Mengaji</option>
-                           <option value="24">UTBK/Persiapan PTN</option>
-                           <option value="25">Mahasiswa</option>
-                        </select>
-                     </div>
-                     <div class="col-12 col-sm-6" id="place_kurikulum" style="display:none">
-                        <label id="label_kurikulum">Kurikulum</label>
-                        <select class="custom-select shadow-none" name="kurikulum_id" onchange="change_kurikulum()" id="kurikulum_id">
-                           <option value="10">Nasional</option>
-                           <option value="11">Nasional Plus/Bilingual</option>
-                           <option value="12">Internasional</option>
-                           <option value="13">-</option>
-                           <option value="18">Beginner</option>
-                           <option value="19">Elementary</option>
-                           <option value="20">Intermediete</option>
-                           <option value="21">Advance</option>
-                           <option value="22">Iqra</option>
-                           <option value="23">Alquran</option>
-                           <option value="24">Kids</option>
-                           <option value="25">Adults</option>
-                        </select>
-                     </div>
-                  </div>
-                  <div class="form-row mb-2">
-                     <div class="col-12 col-sm-4">
-                        <label>Jumlah Siswa</label>
-                        <select class="custom-select shadow-none" name="jumlah_siswa" id="jumlah_siswa">
-                           <option value="1">1</option>
-                           <option value="2">2</option>
-                           <option value="3">3</option>
-                           <option value="4">4</option>
-                        </select>
-                     </div>
-                     <div class="col-12 col-sm-4">
-                        <label>Sistem Pembelajaran</label>
-                        <select class="custom-select shadow-none" name="sistem_pembelajaran">
-                           <option value="Offline">Offline</option>
-                           <option value="Online">Online</option>
-                        </select>
-                     </div>
-                     <div class="col-md-3" id="place_kelas" style="display:none">
-                        <label id="label_kelas">Kelas</label>
-                        <select class="custom-select shadow-none" id="select_kelas" name="kelas"></select>
-                     </div>
-                  </div>
-                  <div class="row">
-                     <div class="col-12 col-sm-6 my-1">
-                        <label>Provinsi</label>
-                        <select class="custom-select select2 select2-hidden-accessible" name="provinsi_id" id="provinsi_id" onchange="change_provinsi()" tabindex="-1" aria-hidden="true">
-                           <option value="">Pilih</option>
-                           <option value="11">ACEH</option>
-                           <option value="12">SUMATERA UTARA</option>
-                           <option value="13">SUMATERA BARAT</option>
-                           <option value="14">RIAU</option>
-                           <option value="15">JAMBI</option>
-                           <option value="16">SUMATERA SELATAN</option>
-                           <option value="17">BENGKULU</option>
-                           <option value="18">LAMPUNG</option>
-                           <option value="19">KEPULAUAN BANGKA BELITUNG</option>
-                           <option value="21">KEPULAUAN RIAU</option>
-                           <option value="31">DKI JAKARTA</option>
-                           <option value="32">JAWA BARAT</option>
-                           <option value="33">JAWA TENGAH</option>
-                           <option value="34">DI YOGYAKARTA</option>
-                           <option value="35">JAWA TIMUR</option>
-                           <option value="36">BANTEN</option>
-                           <option value="51">BALI</option>
-                           <option value="52">NUSA TENGGARA BARAT</option>
-                           <option value="53">NUSA TENGGARA TIMUR</option>
-                           <option value="61">KALIMANTAN BARAT</option>
-                           <option value="62">KALIMANTAN TENGAH</option>
-                           <option value="63">KALIMANTAN SELATAN</option>
-                           <option value="64">KALIMANTAN TIMUR</option>
-                           <option value="65">KALIMANTAN UTARA</option>
-                           <option value="71">SULAWESI UTARA</option>
-                           <option value="72">SULAWESI TENGAH</option>
-                           <option value="73">SULAWESI SELATAN</option>
-                           <option value="74">SULAWESI TENGGARA</option>
-                           <option value="75">GORONTALO</option>
-                           <option value="76">SULAWESI BARAT</option>
-                           <option value="81">MALUKU</option>
-                           <option value="82">MALUKU UTARA</option>
-                           <option value="91">PAPUA BARAT</option>
-                           <option value="94">PAPUA</option>
-                        </select>
-                        <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 445px;">
-                           <span class="selection">
-                              <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-provinsi_id-container">
-                                 <span class="select2-selection__rendered" id="select2-provinsi_id-container" title="Pilih">Pilih</span>
-                                 <span class="select2-selection__arrow" role="presentation">
-                                    <b role="presentation"></b>
-                                 </span>
-                              </span>
-                           </span>
-                           <span class="dropdown-wrapper" aria-hidden="true">
-                           </span>
-                        </span>
-                     </div>
-                     <div class="col-12 col-sm-6 my-1">
-                        <label>Kab/Kota</label>
-                        <select class="custom-select select2 select2-hidden-accessible" name="kota_id" id="kota_id" tabindex="-1" aria-hidden="true">
-                           <option value="">Pilih</option>
-                        </select>
-                        <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 445px;">
-                           <span class="selection">
-                              <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-kota_id-container">
-                                 <span class="select2-selection__rendered" id="select2-kota_id-container" title="Pilih">Pilih</span>
-                                 <span class="select2-selection__arrow" role="presentation">
-                                    <b role="presentation"></b>
-                                 </span>
-                              </span>
-                           </span>
-                           <span class="dropdown-wrapper" aria-hidden="true">
-                           </span>
-                        </span>
-                     </div>
-                  </div>
-               </form>
             </div>
             <div class="container">
                <div class="row">

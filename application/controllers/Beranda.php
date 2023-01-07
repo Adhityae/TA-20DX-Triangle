@@ -3,6 +3,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Beranda extends CI_Controller {
 
+	public function __construct()
+    {
+        parent::__construct();
+        $this->load->model('Login_model');
+    }
+
 	public function index()
 	{
 		$this->load->view('vw_beranda');
@@ -23,14 +29,12 @@ class Beranda extends CI_Controller {
 		$this->load->view('vw_signin');
 	}
 
-	public function signup()
-	{
-		$this->load->view('vw_signup');
+	public function	ceklogin(){
+		$email = $this->input->post('email');
+		$password = $this->input->post('password');
+		$this->load->model('Mberanda');
+		$this->Mberanda->ambillogin($email,$password);
 	}
 
-	public function tentangkami()
-	{
-		$this->load->view('vw_tentangkami');
-	}
 }
 
