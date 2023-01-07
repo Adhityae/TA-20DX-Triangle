@@ -20,10 +20,6 @@
       <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif" />
       <!-- Scrollbar Custom CSS -->
       <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>" />
-      <!-- Tweaks for older IEs-->
-      <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
         <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
         <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>" />
@@ -148,7 +144,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-envelope">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -158,7 +154,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-key">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -166,7 +162,7 @@
                         <div class="input-group-append">
                             <span class="input-group-text left-no-line" id="show-pass">
                                 <i class="fa fa-eye-slash">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -181,7 +177,7 @@
                         <br>
                         <div class="text-center">
                             Belum punya akun ?
-                            <a href="TA-20DX-Triangle/register" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
+                            <a href="<?= base_url() ?>index.php/Beranda/signup" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
                         </div>
                     </div>
                 </form>
