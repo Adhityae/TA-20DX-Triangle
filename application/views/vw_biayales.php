@@ -54,8 +54,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                               <ul class="menu-area-main" >
-                                 <li class="active"> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
+                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
                                  <li><a href="contact.html">Tentang Kami</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signin">Login</a></li>
@@ -84,34 +84,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      <section class="slider_section">
-         <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <img class="first-slide" src="<?php echo base_url("assets/images/banner1.png"); ?>" alt="First slide">
-                  <div class="container">
-                     <div class="carousel-caption relative">
-                        <h1>Selamat Datang Di Our Teacher<br> Sesuaikan Kebutuhan Belajar Bersama Kami</h1>
-                        <p>Anda dapat memilih program belajar<br> dan mengatur jumlah pertemuan<br> sesuai keinginan Anda</p>
-                        <div class="button_section"> <a class="main_bt" href="#">Pesan Sekarang</a>  </div>
-                        <ul class="locat_icon">
-                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/facebook.png"); ?>"></a></li>
-                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/instagram.png"); ?>"></a></li>
-                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/linkedin.png"); ?>"></a></li>
-                           <li> <a href="#"><img src="<?php echo base_url("assets/icon/twitter.png"); ?>"></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-      </section>
       <!--Books -->
       <div class="Books">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <div class="titlepage"><br>
-                     <h2>Mengapa Perlu Belajar Bersama<strong class="black"> Our Teacher?</strong></h2>
-                     <span>Keunggulan Our Teacher dari Pusat Les Privat Lainnya</span> 
+                  <div class="titlepage"><br><br><br><br>
+                     <h2>Berikut Ini Biaya Les Bersama<strong class="black"><br> Our Teacher</strong></h2>
+                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span> 
                   </div>
                </div>
             </div>
@@ -158,7 +138,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage3">
-                     <h2>Hubungi Kami</h2>
+                     <h2>Dapatkan info seputar bimbingan kami</h2>
                   </div>
                </div>
             </div>

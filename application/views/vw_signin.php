@@ -10,16 +10,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
         <!-- General CSS Files -->
-        <link rel="stylesheet" href='<?php echo base_url('assets/css/bootstrap.css'); ?>' />
-        <link rel="stylesheet" href='<?php echo base_url('assets/css/style.css'); ?>' />
-        <link rel="stylesheet" href='<?php echo base_url('assets/css/slick.css'); ?>' />
-        <link rel="stylesheet" href='<?php echo base_url('assets/css/responsive.css'); ?>' />
-        <link rel="stylesheet" href='<?php echo base_url('assets/fonts/all.min.css'); ?>' />
-        <link rel="stylesheet" href='<?php echo base_url('assets/fonts/font-awesome.min.css'); ?>' />
+        <!-- bootstrap css -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.min.css"); ?>" />
+      <!-- style css -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/style.css"); ?>" />
+      <!-- Responsive-->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/responsive.css"); ?>" />
+      <!-- fevicon -->
+      <link rel="icon" href="<?php echo base_url("assets/images/fevicon.png"); ?>" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="<?php echo base_url("assets/css/jquery.mCustomScrollbar.min.css"); ?>" />
+      <!-- Tweaks for older IEs-->
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 
-        <link rel="preconnect" href="fonts/fonts.googleapis.com">
-        <link rel="preconnect" href="fonts/fonts.googleapis.com" crossorigin="">
-        <link href="fonts/fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="<?php echo base_url("assets/css/bootstrap.css"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/all.min.css"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts/font-awesome.min.css"); ?>" />
+
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>" />
+        <link rel="preconnect" href="<?php echo base_url("assets/fonts/fonts.googleapis.com"); ?>" />
+        <link rel="stylesheet" href="<?php echo base_url("assets/fonts.googleapis.com/css2?family=Inter&amp;display=swap"); ?>" />
 
         <style>
             *{
@@ -94,13 +106,13 @@
         <div class="row">
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
-                    <img src="images/logos.png" alt="logo-min" style="display: block;margin-bottom: 2em">
-                    <img src="images/login.png" alt="images-login" style="width: 80%">
+                <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logo.svg"); ?>" alt="#" style="width: 100%"></a> </div>
+                <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
-                <form id="form_login" action="TA-20DX-Triangle/login_action" method="POST">
-                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">                           <div class="mb-4">
+                <form id="form_login" action="<?php echo site_url("Beranda/ceklogin"); ?>" method="POST">
+                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR"><div class="mb-4">
                         <h5 class="text-center mb-1" style="color: black;font-weight: 600">Masuk</h5>
                         <p class="text-center text-muted" style="font-size: small">Pilih Tipe Akun Anda</p>
                     </div>
@@ -109,7 +121,7 @@
                             <div class="card card-check " id="siswa">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="images/siswa.png" style="max-height: 60px">
+                                        <img src='<?php echo base_url("assets/images/siswa.png"); ?>' style="max-height: 40px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_siswa" value="siswa">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Siswa</h5>
@@ -122,7 +134,7 @@
                             <div class="card card-check " id="guru">
                                 <div class="card-body">
                                     <div class="d-flex justify-content-around">
-                                        <img src="images/guru.png" style="max-height: 60px">
+                                        <img src="<?php echo base_url("assets/images/guru.png"); ?>" style="max-height: 40px">
                                         <div class="d-flex align-items-center">
                                             <input class="form-check-input" type="radio" name="tipe_akun" id="akun_guru" value="guru">
                                             <h5 class="text-center mb-1" style="color: black;font-weight: 600">Tutor</h5>
@@ -140,7 +152,7 @@
                                 </i>
                             </span>
                         </div>
-                        <input type="text" name="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
+                        <input type="text" name="email" id="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
                     </div>
                     <div class="input-group mb-4" id="input-password">
                         <div class="input-group-prepend">
@@ -163,7 +175,7 @@
                         <a href="TA-20DX-Triangle/forget-password" style="text-decoration: none;color:black;font-weight: 600"> Lupa Password ? </a>
                     </div>
                     <div class="form-group">
-                        <button type="button" id="button_login" class="btn btn-primary shadow-none btn-block" style="border-radius: 12px">
+                        <button type="submit" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
                         Login
                         </button>
                         <br>
@@ -187,9 +199,9 @@
         </div>
     </section>
     <!-- General JS Scripts -->
-    <script src="TA-20DX-Triangle/js/jquery.min.js"></script>
-    <script src="TA-20DX-Triangle/js/popper.js"></script>
-    <script src="TA-20DX-Triangle/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function (){
        $('.section').css('min-height', screen.height);

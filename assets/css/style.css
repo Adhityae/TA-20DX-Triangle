@@ -125,7 +125,7 @@
      padding: 0;
 }
  .form-control:focus {
-     border-color: #ffffff !important;
+     border-color: #000000 !important;
      box-shadow: 0 0 0 .2rem rgba(255, 255, 255, .25);
 }
  .navbar-form input {
@@ -1525,7 +1525,7 @@ ul.locat_icon li a{
      line-height: 32px;
 }
 
-.bg {background-color: #81256c;}
+.bg {background-color: #f2b705;}
 
 .Library-box {
     padding: 20px 0px 10px 0px;
@@ -1543,7 +1543,7 @@ ul.locat_icon li a{
      width: 200px;
      font-size: 17px;
      padding: 20px 0px;
-     background-color: #81256c;
+     background-color: #f2b705;
      color: #fff;
      display: inline-block;
      line-height: 20px;
@@ -1618,8 +1618,8 @@ text-align: center;
      font-weight: 600;
 }
 .form-control {
-    border: #fff solid 1px;
-    padding: 15px 20px;
+    border: rgb(147, 147, 147) solid 1px;
+    padding: 5px 10px;
     border-radius: inherit;
     color: #cfcece;
     font-weight: 300;
@@ -1647,9 +1647,9 @@ text-align: center;
 }
 .send-btn {
     font-size: 20px;
-    border: #81256c solid 2px;
+    border: #f2b705 solid 2px;
     padding: 7px 69px;
-    background-color: #81256c;
+    background-color: #f2b705;
     color: #fff;
     margin-left: 15px;
     margin-top: 20px;
@@ -1665,7 +1665,7 @@ color: #000;
 }
  .footer {
      background: url(../images/footer-bg.jpg);
-     padding-bottom: 35px;
+     padding-bottom: px;
      background-size: 100% 100%;
 background-repeat: no-repeat;
 background-position: center center;
@@ -1677,11 +1677,11 @@ background-position: center center;
 
 
  .footer .Follow h3 {
-     color: #fff;
+     color: #000;
      font-size: 25px;
      line-height: 30px;
      font-weight: 600;
-border-bottom: #fff solid 1px;
+border-bottom: #000 solid 1px;
     border-bottom-width: 1px;
 border-width: 1px;
 display: inline-block;
