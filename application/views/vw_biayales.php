@@ -95,40 +95,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
                </div>
             </div>
-            <div class="row box">
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/fun.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/flexible.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/adjustable.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/achievable.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-6 offset-md-3">
-                  <p>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</p>
-               </div>
-            </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="read-more">
-                        <a href="#">Pesan Sekarang</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
          </div>
       </div>
       <!-- end Books -->
