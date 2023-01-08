@@ -7,7 +7,7 @@ class Mberanda extends CI_Model {
     {
         $this->db->where('email', $email);
         $this->db->where('password', $password);
-        $query = $this->db->get('tbl_akun');
+        $query = $this->db->get('akun_siswa');
         if($query->num_rows()>0){
             foreach ($query->result() as $row) {
                 $sess = array ('email' => $row->email, 'password' => $row->password);
