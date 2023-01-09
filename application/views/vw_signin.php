@@ -160,10 +160,10 @@
                 <div class="text-center mt-5">
                     <p>
                         Dengan login, kamu telah menyetujui
-                        <a href="" id="link-syarat" style="text-decoration: none;color:black;font-weight: 600"> Syarat &amp; Ketentuan</a>
+                        <a href="<?= base_url() ?>index.php/Beranda/syarat" style="text-decoration: none;color:black;font-weight: 600"> Syarat &amp; Ketentuan</a>
                         <br>
                         serta
-                        <a href="TA-20DX-Triangle/kebijakan_privasi_dan_keamanan" style="text-decoration: none;color:black;font-weight: 600"> Kebijakan Privasi</a>
+                        <a href="<?= base_url() ?>index.php/Beranda/kebijakanprivasi" style="text-decoration: none;color:black;font-weight: 600"> Kebijakan Privasi</a>
                         kami
                     </p>
                 </div>

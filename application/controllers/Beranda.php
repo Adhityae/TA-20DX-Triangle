@@ -39,6 +39,16 @@ class Beranda extends CI_Controller {
 		$this->load->view('vw_tentangkami');
 	}
 
+	public function kebijakanprivasi()
+	{
+		$this->load->view('vw_kebijakanprivasi');
+	}
+
+	public function syarat()
+	{
+		$this->load->view('vw_syarat');
+	}
+
 	public function	ceklogin(){
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
