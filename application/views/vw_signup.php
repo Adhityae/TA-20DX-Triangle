@@ -107,7 +107,15 @@
                 </a>
             </div>
             <div class="col-md-6">
-                <form id="form_login" action="TA-20DX-Triangle/login_action" method="POST">
+                <?php
+                    if($this->session->flashdata('error') !='')
+                    {
+                        echo '<div class="alert alert-danger" role="alert">';
+                        echo $this->session->flashdata('error');
+                        echo '</div>';
+                    }
+                ?>
+                <form id="form_signup" action="<?php echo base_url('Beranda/registrasi'); ?>" method="POST">
                     <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">
                     <div class="mb-4">
                         <h5 class="text-center mb-1" style="color: black;font-weight: 600">Daftar</h5>
@@ -120,7 +128,7 @@
                                 </i>
                             </span>
                         </div>
-                        <input type="text" name="username" class="form-control  shadow-none" placeholder="Nama Lengkap" value="">
+                        <input type="text" name="username" id="username" class="form-control  shadow-none" placeholder="Nama Lengkap" value="">
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -130,7 +138,7 @@
                                 </i>
                             </span>
                         </div>
-                        <input type="text" name="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
+                        <input type="text" name="email" id="email" class="form-control  shadow-none" placeholder="Username / Email" value="">
                     </div>
                     <div class="input-group mb-4" id="input-password">
                         <div class="input-group-prepend">
@@ -167,7 +175,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <button type="button" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
+                        <button type="submit" id="button_register" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
                         Daftar
                         </button>
                     </div>
@@ -192,6 +200,7 @@
         </div>
     </section>
     <!-- General JS Scripts -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/popper.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
@@ -249,6 +258,18 @@
                 $('#show-pass i').removeClass( "fa fa-eye-slash" );
                 $('#show-pass i').addClass( "fa fa-eye" );
             }
+        });
+
+        $(function () {
+            $("#button_register").click(function () {
+                var password = $("#password").val();
+                var confirmPassword = $("#password-confirm").val();
+                if (password != confirmPassword) {
+                    alert("Passwords do not match.");
+                    return false;
+                }
+                return true;
+            });
         });
     </script>
 </body>

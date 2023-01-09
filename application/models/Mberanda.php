@@ -21,4 +21,14 @@ class Mberanda extends CI_Model {
             redirect('Beranda/signin');
         }
     }
+
+    public function register($username,$email,$password)
+    {
+        $data_user = array(
+            'username' => $username,
+            'email' => $email,
+            'password' => $password
+        );
+        $this->db->insert('akun_siswa', $data_user);
+    }
 }
