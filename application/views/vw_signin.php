@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-        <title>Login | Our Teacher</title>
+        <title>Sign In | Our Teacher</title>
         <meta name="author" content="Our Teacher">
         <meta name="robots" content="index,follow">
         <meta name="googlebot" content="index,follow">
@@ -112,43 +112,15 @@
             </div>
             <div class="col-md-6">
                 <form id="form_login" action="<?php echo site_url("Beranda/ceklogin"); ?>" method="POST">
-                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR"><div class="mb-4">
-                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Masuk</h5>
-                        <p class="text-center text-muted" style="font-size: small">Pilih Tipe Akun Anda</p>
-                    </div>
-                    <div class="row mb-5">
-                        <div class="col">
-                            <div class="card card-check " id="siswa">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around">
-                                        <img src='<?php echo base_url("assets/images/siswa.png"); ?>' style="max-height: 40px">
-                                        <div class="d-flex align-items-center">
-                                            <input class="form-check-input" type="radio" name="tipe_akun" id="akun_siswa" value="siswa">
-                                            <h5 class="text-center mb-1" style="color: black;font-weight: 600">Siswa</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card card-check " id="guru">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around">
-                                        <img src="<?php echo base_url("assets/images/guru.png"); ?>" style="max-height: 40px">
-                                        <div class="d-flex align-items-center">
-                                            <input class="form-check-input" type="radio" name="tipe_akun" id="akun_guru" value="guru">
-                                            <h5 class="text-center mb-1" style="color: black;font-weight: 600">Tutor</h5>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">
+                    <div class="mb-4">
+                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Sign Up</h5>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-envelope">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -158,7 +130,7 @@
                         <div class="input-group-prepend">
                             <span class="input-group-text">
                                 <i class="fa fa-key">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -166,7 +138,7 @@
                         <div class="input-group-append">
                             <span class="input-group-text left-no-line" id="show-pass">
                                 <i class="fa fa-eye-slash">
-                                    ::before
+                                    <!-- ::before -->
                                 </i>
                             </span>
                         </div>
@@ -181,7 +153,7 @@
                         <br>
                         <div class="text-center">
                             Belum punya akun ?
-                            <a href="TA-20DX-Triangle/register" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
+                            <a href="<?= base_url() ?>index.php/Beranda/signup" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
                         </div>
                     </div>
                 </form>
