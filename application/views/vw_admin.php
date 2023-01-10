@@ -54,12 +54,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="limit-box">
                            <nav class="main-menu">
                            <ul class="menu-area-main" >
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/tentangkami">Tentang Kami</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/index">Dashboard</a> </li>
+                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Table</a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/signup">Logout</a></li>
                               </ul>
                            </nav>
                         </div>
@@ -77,111 +74,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
-                  <div class="titlepage"><br><br><br><br>
-                     <h2>Berikut Ini Biaya Les Bersama<strong class="black"><br> Our Teacher</strong></h2>
-                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span> 
+                  <div><br><br><br><br>
+                     <span>DataTables is a third party plugin that is used to generate the demo table below. For more information about DataTables, please visit the official DataTables documentation.</span> 
                   </div>
                </div>
             </div>
-            <div class="row box">
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/fun.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/flexible.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/adjustable.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                  <div class="book-box">
-                     <figure><img src="<?php echo base_url("assets/images/achievable.svg"); ?>" alt="img"/></figure>
-                  </div>
-               </div>
-               <div class="col-md-6 offset-md-3">
-                  <p>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</p>
-               </div>
-            </div>
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-12">
-                     <div class="read-more">
-                        <a href="#">Pesan Sekarang</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
+
          </div>
       </div>
       <!-- end Books -->
-      <!-- Contact -->
-      <div class="Contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage3">
-                     <h2>Dapatkan info seputar bimbingan kami</h2>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                  <form>
-                     <div class="row">
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <input class="form-control" placeholder="Nama" type="Nama">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <input class="form-control" placeholder="Nomor Telepon" type="Nohp">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <input class="form-control" placeholder="Email" type="Email">
-                        </div>
-                        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
-                           <textarea class="textarea" placeholder="Pesan"></textarea>
-                        </div>
-                     </div>
-                  </form>
-               </div>
-               <button class="send-btn">Kirim</button>
-            </div>
-         </div>
-      </div>
-      <!-- end Contact -->
-      <!-- footer -->
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row pdn-top-30">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
-                     <div class="Follow">
-                        <h3>Ikuti Kami</h3>
-                     </div>
-                     <ul class="location_icon">
-                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/facebook.png"); ?>"></a></li>
-                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/Twitter.png"); ?>"></a></li>
-                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/linkedin.png"); ?>"></a></li>
-                        <li> <a href="#"><img src="<?php echo base_url("assets/icon/instagram.png"); ?>"></a></li>
-                     </ul>
-                  </div>
-                  <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12">
-                     <div class="Follow">
-                        <h3>Dapatkan info seputar bimbingan kami</h3>
-                     </div>
-                     <input class="Newsletter" placeholder="Masukan Email" type="Enter your email">
-                     <button class="Subscribe">Subscribe</button>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <!-- end footer -->
       <!-- Javascript files-->
       <script src='<?php echo base_url("assets/js/jquery.min.js"); ?>'></script>
       <script src='<?php echo base_url("assets/js/popper.min.js"); ?>'></script>
