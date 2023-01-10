@@ -103,14 +103,14 @@
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
                 <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logo.svg"); ?>" alt="#" style="width: 100%"></a> </div>
-                <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
+                <img src='<?php echo base_url("assets/images/signup.svg"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
                 <form id="form_login" action="TA-20DX-Triangle/login_action" method="POST">
                     <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">
                     <div class="mb-4">
-                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Daftar</h5>
+                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Sign Up</h5>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
