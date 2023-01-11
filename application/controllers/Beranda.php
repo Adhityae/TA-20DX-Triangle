@@ -34,9 +34,9 @@ class Beranda extends CI_Controller {
 		$this->load->view('vw_signup');
 	}
 
-	public function tentangkami()
+	public function referral()
 	{
-		$this->load->view('vw_tentangkami');
+		$this->load->view('vw_referral');
 	}
 
 	public function kebijakanprivasi()

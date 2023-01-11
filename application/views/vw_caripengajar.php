@@ -57,8 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li class="active"><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/tentangkami">Tentang Kami</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
                               </ul>
                            </nav>
@@ -98,6 +97,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <button class="btn btn-success" type="button" onclick="cari_guru()">Cari Pengajar</button>
                 </div>
             </div>
+            <div class="col-md-10 offset-md-1">
+               <div class="titlepage">
+                  <h3>Guru guru Terbaik dari Our Teacher</h3> 
+               </div>   
+            </div>
+            
+
+
+
+
          </div>
       </div>
       <!-- end Books -->
