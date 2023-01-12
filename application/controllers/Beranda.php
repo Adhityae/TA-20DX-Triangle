@@ -62,8 +62,40 @@ class Beranda extends CI_Controller {
 	public function	ceklogin(){
 		$email = $this->input->post('email');
 		$password = $this->input->post('password');
-		$this->load->model('Mberanda');
-		$this->Mberanda->ambillogin($email,$password);
+
+		$validasi_email = $this->Mberanda->query_validasi_email($email);
+		if($validasi_email->num_rows() > 0){
+			$validasi_ps = $this->Mberanda->query_validasi_password($email,$password);
+			if($validasi_ps->num_rows() > 0){
+				$x = $validasi_ps->row_array();
+				if($x['status'] == '1'){
+					$this->session->set_userdata('logged',TRUE);
+					$this->session->set_userdata('user',$email);
+					$id=$x['id'];
+					if($x['akses'] == '1'){
+						$name = $x['username'];
+						$this->session->set_userdata('access','admin');
+						$this->session->set_userdata('id',$id);
+						$this->session->set_userdata('name',$name);
+						redirect('Beranda/admin');
+					}	
+					elseif ($x['akses'] == '2') {
+						$name = $x['username'];
+						$this->session->set_userdata('access','user');
+						$this->session->set_userdata('id',$id);
+						$this->session->set_userdata('name',$name);
+						redirect('Beranda/index');
+					}
+					else {
+						$this->session->set_flashdata('error', validation_errors());
+						redirect('Beranda/signin');
+					}
+				}
+			}	
+		}
+
+		// $this->load->model('Mberanda');
+		// $this->Mberanda->ambillogin($email,$password);
 	}
 
 	public function registrasi()
