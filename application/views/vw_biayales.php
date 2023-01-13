@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
                                  <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/about">Tentang Kami</a></li>                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
                               </ul>
                            </nav>
@@ -72,19 +72,133 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </header>
       <!-- end header -->
       <!--Books -->
+      <section class="biaya my-5" id="sec-biaya" aria-hidden="true">
       <div class="Books">
          <div class="container">
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage"><br><br><br><br>
                      <h2>Berikut Ini Biaya Les Bersama<strong class="black"><br> Our Teacher</strong></h2>
-                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span> 
+                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span>
+                     <form id="form_cek_biaya">
+                        <div class="form-row mb-2">
+                           <div class="col-md-3" id="place_program"><br>
+                              <label>Program</label>
+                              <select class="custom-select shadow-none" name="jenjang_id" id="jenjang_id" onchange="change_jenjang()">
+                                 <option disabled="" selected="">Pilih Program</option>
+                                 <option value="11">Umum</option>
+                                 <option value="12">Playgroup</option>
+                                 <option value="13">TK</option>
+                                 <option value="14">SD</option>
+                                 <option value="15">SMP</option>
+                                 <option value="16">SMA</option>
+                                 <option value="17">SMK</option>
+                                 <option value="18">Bahasa Asing</option>
+                                 <option value="23">Mengaji</option>
+                                 <option value="24">Mahasiswa</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-sm-6" id="place_kelas"><br>
+                              <label id="label_kurikulum">Kurikulum</label>
+                              <select class="custom-select shadow-none" name="kurikulum_id" onchange="change_kurikulum()" id="kurikulum_id">
+                                 <option value="10">Les Gitar</option>
+                                 <option value="11">Les Piano</option>
+                                 <option value="12">Les Coding</option>
+                                 <option value="13">Les</option>
+                              </select>
+                           </div>
+                        </div>
+                        <div class="form-row mb-2">
+                           <div class="col-12 col-sm-4">
+                              <label>Jumlah Siswa</label>
+                              <select class="custom-select shadow-none" name="jumlah_siswa" id="jumlah_siswa">
+                                 <option value="1">1</option>
+                                 <option value="2">2</option>
+                                 <option value="3">3</option>
+                                 <option value="4">4</option>
+                              </select>
+                           </div>
+                           <div class="col-12 col-sm-4">
+                              <label>Sistem Pembelajaran</label>
+                              <select class="custom-select shadow-none" name="sistem_pembelajaran">
+                                 <option value="Offline">Offline</option>
+                                 <option value="Online">Online</option>
+                              </select>
+                           </div>
+                           <div class="col-md-3" id="place_kelas" style="display:none">
+                              <label id="label_kelas">Kelas</label>
+                              <select class="custom-select shadow-none" id="select_kelas" name="kelas">
+                              </select>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-12 col-sm-6 my-1">
+                              <label>Provinsi</label>
+                              <select class="custom-select select2 select2-hidden-accessible" name="provinsi_id" id="provinsi_id" onchange="change_provinsi()" tabindex="-1" aria-hidden="true">
+                                 <option value="">Pilih</option>
+                                 <option value="11">LAMPUNG</option>
+                              </select>
+                              <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 445px;">
+                                 <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-provinsi_id-container">
+                                       <span class="select2-selection__rendered" id="select2-provinsi_id-container" title="Pilih">Pilih</span>
+                                       <span class="select2-selection__arrow" role="presentation">
+                                          <b role="presentation"></b>
+                                       </span>
+                                    </span>
+                                 </span>
+                                 <span class="dropdown-wrapper" aria-hidden="true">
+                                 </span>
+                              </span>
+                           </div>
+                           <div class="col-12 col-sm-6 my-1">
+                              <label>Kab/Kota</label>
+                              <select class="custom-select select2 select2-hidden-accessible" name="kota_id" id="kota_id" tabindex="-1" aria-hidden="true">
+                                 <option value="">Pilih</option>
+                                 <option value="11">BANDAR LAMPUNG</option>
+                                 <option value="11">LAMPUNG BARAT</option>
+                                 <option value="11">LAMPUNG SELATAN</option>
+                                 <option value="11">LAMPUNG TIMUR</option>
+                                 <option value="11">LAMPUNG TENGAH</option>
+                                 <option value="11">LAMPUNG UTARA</option>
+                                 <option value="11">MESUJI</option>
+                                 <option value="11">METRO</option>
+                                 <option value="11">PESAWARAN</option>
+                                 <option value="11">PESISIR BARAT</option>
+                                 <option value="11">PRINGSEWU</option>
+                                 <option value="11">TANGGAMUS</option>
+                                 <option value="11">TULANG BAWANG</option>
+                                 <option value="11">TULANG BAWANG BARAT</option>
+                                 <option value="11">WAY KANAN</option>
+                              </select>
+                              <span class="select2 select2-container select2-container--default" dir="ltr" style="width: 445px;">
+                                 <span class="selection">
+                                    <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-kota_id-container">
+                                       <span class="select2-selection__rendered" id="select2-kota_id-container" title="Pilih">Pilih</span>
+                                       <span class="select2-selection__arrow" role="presentation">
+                                          <b role="presentation"></b>
+                                       </span>
+                                    </span>
+                                 </span>
+                                 <span class="dropdown-wrapper" aria-hidden="true">
+                                 </span>
+                              </span>
+                           </div>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                           <a href="#" class="btn btn-main" id="cek_paket">
+                              <img src="https://www.funteacherprivate.com/landingpage/resources/images/Icons and Ilustrations/cari.svg" class="mr-2">Cek Biaya
+                           </a>
+                        </div>
+                     </form>
                   </div>
                </div>
             </div>
          </div>
       </div>
       <!-- end Books -->
+      </section>
+
       <!-- Contact -->
       <div class="Contact">
          <div class="container">
