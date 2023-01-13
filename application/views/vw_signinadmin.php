@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-        <title>Sign In | Our Teacher</title>
+        <title>Admin | Our Teacher</title>
         <meta name="author" content="Our Teacher">
         <meta name="robots" content="index,follow">
         <meta name="googlebot" content="index,follow">
@@ -107,14 +107,14 @@
             <div class="col-md-6 d-none d-sm-block">
                 <a href="">
                 <div class="logo"> <a href="<?= base_url() ?>index.php/Beranda/index"><img src="<?php echo base_url("assets/images/logo.svg"); ?>" alt="#" style="width: 100%"></a> </div>
-                <img src='<?php echo base_url("assets/images/login.png"); ?>' alt="images-login" style="width: 80%">
+                <img src='<?php echo base_url("assets/images/admin.svg"); ?>' alt="images-login" style="width: 80%">
                 </a>
             </div>
             <div class="col-md-6">
                 <form id="form_login" action="<?php echo site_url("Beranda/ceklogin"); ?>" method="POST">
                     <input type="hidden" name="_token" value="msWEtdk2mZEKzEINt35vhHb9HO0CGbctKMavHqUR">
                     <div class="mb-4">
-                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Sign In</h5>
+                        <h5 class="text-center mb-1" style="color: black;font-weight: 600">Admin Sign In</h5>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -150,27 +150,8 @@
                         <button type="submit" id="button_login" class="btn btn-primary shadow-none btn-block " style="border-radius: 12px">
                         Login
                         </button>
-                        <br>
-                        <div class="text-center">
-                            Belum punya akun ?
-                            <a href="<?= base_url() ?>index.php/Beranda/signup" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
-                        </div>
-                        <div class="text-center">
-                            Masuk sebagai Admin ?
-                            <a href="<?= base_url() ?>index.php/Beranda/signinadmin" style="text-decoration: none;color:black;font-weight: 600">Masuk</a>
-                        </div>
                     </div>
                 </form>
-                <div class="text-center mt-5">
-                    <p>
-                        Dengan login, kamu telah menyetujui
-                        <a href="<?= base_url() ?>index.php/Beranda/syarat" style="text-decoration: none;color:black;font-weight: 600"> Syarat &amp; Ketentuan</a>
-                        <br>
-                        serta
-                        <a href="<?= base_url() ?>index.php/Beranda/kebijakanprivasi" style="text-decoration: none;color:black;font-weight: 600"> Kebijakan Privasi</a>
-                        kami
-                    </p>
-                </div>
             </div>
         </div>
     </section>

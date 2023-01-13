@@ -1,4 +1,4 @@
-git# Untuk Upload (Commit)
+# Untuk Upload (Commit)
 # PS E:\laragon\www\TA-20DX-Triangle> git add .
                                                                 
 # PS E:\laragon\www\TA-20DX-Triangle> git commit -m "Master: Upload master project"

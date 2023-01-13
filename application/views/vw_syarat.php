@@ -55,9 +55,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                            <nav class="main-menu">
                            <ul class="menu-area-main" >
                                  <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/tentangkami">Tentang Kami</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
                               </ul>
                            </nav>
@@ -77,10 +78,25 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                <div class="col-md-10 offset-md-1">
                   <div class="titlepage"><br><br><br><br>
-                     <h2>Berikut Ini Biaya Les Bersama<strong class="black"><br> Our Teacher</strong></h2>
-                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span> 
+                     <h2>Syarat dan Ketentuan Umum Penggunaan Situs Our Teacher</h2>
+                     <span>Tanggal Pembaruan Terakhir : 24 Agustus 2021</span> 
                   </div>
                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="mapel" placeholder="Ketik Mata Pelajaran">
+                    </div>
+                </div>
+            <div class="col-md-5">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="lokasi" placeholder="Ketik Lokasi (Kecamatan / Kota)">
+                </div>
+            </div>
+                <div class="col-md-2">
+                    <button class="btn btn-success" type="button" onclick="cari_guru()">Cari Pengajar</button>
+                </div>
             </div>
          </div>
       </div>

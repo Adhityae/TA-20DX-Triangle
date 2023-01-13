@@ -53,11 +53,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                      <div class="menu-area">
                         <div class="limit-box">
                            <nav class="main-menu">
-                           <ul class="menu-area-main" >
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
-                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
+                              <ul class="menu-area-main" >
+                                 <li> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
+                                 <li class="active"><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
                               </ul>
                            </nav>
@@ -67,31 +68,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                </div>
             </div>
          </div>
-         
          <!-- end header inner -->
       </header>
       <!-- end header -->
-      <!--Books -->
-      <div class="Books">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-10 offset-md-1">
-                  <div class="titlepage"><br><br><br><br>
-                     <h2>Berikut Ini Biaya Les Bersama<strong class="black"><br> Our Teacher</strong></h2>
-                     <span>Anda dapat memilih program dan mengatur jumlah pertemuan sesuai kebutuhan Anda</span> 
+      <section class="slider_section">
+         <div id="myCarousel" class="carousel slide banner-main" data-ride="carousel">
+            <div class="carousel-inner">
+               <div class="carousel-item active">
+                  <img class="first-slide" src="<?php echo base_url("assets/images/banner1.png"); ?>" alt="First slide">
+                  <div class="container">
+                     <div class="carousel-caption relative">
+                        <h1>Panen Cuan<br>Cuma Rebahan</h1>
+                        <p>Ajak kenalan mu Les Private di Our Teacher dan hasilkan jutaan rupiah!</p>
+                        <div class="button_section"> <a class="main_bt" href="#">Bergabung Sekarang</a>  </div>
+                     </div>
                   </div>
                </div>
-            </div>
-         </div>
-      </div>
-      <!-- end Books -->
+      </section>
       <!-- Contact -->
       <div class="Contact">
          <div class="container">
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage3">
-                     <h2>Dapatkan info seputar bimbingan kami</h2>
+                     <h2>Hubungi Kami</h2>
                   </div>
                </div>
             </div>
