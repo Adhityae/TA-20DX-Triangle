@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/about">Tentang Kami</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
+                                 <li><a href="<?php echo base_url('Beranda/Logout'); ?>">Logout</a></li>
                               </ul>
                            </nav>
                         </div>
