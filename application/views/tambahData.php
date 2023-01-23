@@ -41,30 +41,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             Tambah Data Pelajar
             </div>
             <div class="card-body">
-            <form action="<?php echo base_url().'admin/data_barang/tambah_aksi'?>" method="post" enctype="multipart/form-data">
+            <form action='<?php echo base_url("Beranda/tambah_aksi"); ?>' method="post">
             <div class="form-group">
                 <label>Nama</label>
-                <input type="text" name="nama_brg" class="form-control">
+                <input type="text" name="nama" class="form-control">
             </div>    
                 
             <div class="form-group">
                 <label>Alamat</label>
-                <input type="text" name="kategori" class="form-control">
+                <input type="text" name="alamat" class="form-control">
             </div>    
             <div class="form-group">
                 <label>No HP</label>
-                <input type="text" name="harga" class="form-control">
+                <input type="text" name="no_hp" class="form-control">
             </div>    
             <div class="form-group">
                 <label>Status</label>
-                <input type="text" name="stok" class="form-control">
+                <input type="text" name="status" class="form-control">
             </div>
             <div class="form-group">
-                        <label for="exampleFormControlSelect1">Status</label>
-                        <select class="form-control" name="status" id="exampleFormControlSelect1">
+                        <label for="exampleFormControlSelect1">Mata Pelajaran</label>
+                        <select class="form-control" name="mata_pelajaran" id="exampleFormControlSelect1">
                           <option>~~ Pilih ~~</option>
-                          <option value='Y'>Aktif</option>
-                          <option value='N'>Tidak Aktif</option>
+                          <option value='Pemrograman'>Pemrograman</option>
+                          <option value='Desain'>Desain</option>
+                          <option value='English'>English</option>
                         </select>
                       </div>
             
