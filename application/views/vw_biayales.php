@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                            <div class="col-md-3" id="place_program"><br>
                               <label>Program</label>
                               <select class="custom-select shadow-none" name="jenjang_id" id="jenjang_id" onchange="change_jenjang()">
-                                 <option disabled="" selected="">Pilih Program</option>
+                                 <option disabled="" selected="">Pilih Kelas</option>
                                  <option value="11">Umum</option>
                                  <option value="12">Playgroup</option>
                                  <option value="13">TK</option>
@@ -99,12 +99,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                               </select>
                            </div>
                            <div class="col-12 col-sm-6" id="place_kelas"><br>
-                              <label id="label_kurikulum">Kurikulum</label>
+                              <label id="label_kurikulum">Pilih Program Les Privat</label>
                               <select class="custom-select shadow-none" name="kurikulum_id" onchange="change_kurikulum()" id="kurikulum_id">
                                  <option value="10">Les Gitar</option>
                                  <option value="11">Les Piano</option>
                                  <option value="12">Les Coding</option>
-                                 <option value="13">Les</option>
+                                 <option value="13">Les Biola</option>
+                                 <option value="13">Les Berkendara Mobil</option>
+                                 <option value="13">Les Menjahit</option>
+                                 <option value="13">Les Bahasa Jepang</option>
+                                 <option value="13">Les Bahasa Inggris</option>
+                                 <option value="13">Les Bahasa Jerman</option>
+                                 <option value="13">Les Memasak</option>
+                                 <option value="13">Les Memasak</option>
+                                 <option value="13">Les Menghitung</option>
                               </select>
                            </div>
                         </div>
