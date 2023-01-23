@@ -33,9 +33,6 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon">
-                <i class="fas fa-solid fa-store"></i>
-                </div>
                 <div class="sidebar-brand-text mx-3">Admin</div>
             </a>
 
@@ -45,13 +42,11 @@
             <!-- Nav Item - Dashboard -->
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url('admin/dashboard_admin') ?>">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Dashboard</span></a>
             </li>
 
             <li class="nav-item active">
                 <a class="nav-link" href="<?php echo base_url('Beranda/data_siswa') ?>">
-                    <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Data User</span></a>
             </li>
 
@@ -104,7 +99,7 @@
                 <!-- End of Topbar -->
 
                 <div class="container-fluid">
-                <a class="btn btn-sm btn-primary mb-3" href="<?php echo base_url("Beranda/tambahData"); ?>"><i class="fas fa-plus fa-sm"></i> Tambah Data</a>
+                <a class="btn btn-sm btn-primary mb-3" href="<?php echo base_url("Beranda/tambahData"); ?>"><i class="fa-plus fa-plus"></i> Tambah Data</a>
 
     <table class="table table-bordered">
         <tr>
@@ -128,9 +123,9 @@
             <td><?php echo $data->no_hp ?></td>
             <td><?php echo $data->status ?></td>
             <td>
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-primary"><i class="fa-sharp fa-solid fa-plus"></i></a>        
-            <a href="<?= site_url('Beranda/edit_data' . $data->id) ?>" class="btn  btn-danger"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>        
-            <a href="<?= site_url('Beranda/hapus_data' . $data->id) ?>" class="btn  btn-success"><i class="fa fa-list"></i></a>        
+            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn btn-primary">Tambah</i></a>        
+            <a href="<?= site_url('Beranda/edit_data' . $data->id) ?>" class="btn btn-danger">Edit</i></a>        
+            <a href="<?= site_url('Beranda/hapus_data' . $data->id) ?>" class="btn btn-success">Hapus</i></i></a>        
          </td>
             <!-- <td><?php echo anchor('admin/data_barang/edit/' .$data->id, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
             <td><?php echo anchor('admin/data_barang/hapus/' .$data->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td> -->
