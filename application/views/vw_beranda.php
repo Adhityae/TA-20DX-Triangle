@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                  <li class="active"> <a href="<?= base_url() ?>index.php/Beranda/index">Beranda</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/biayales">Biaya Les</a> </li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/caripengajar">Cari Pengajar</a></li>
-                                 <li><a href="<?= base_url() ?>index.php/Beranda/about">Tentang Kami</a></li>
+                                 <li><a href="<?= base_url() ?>index.php/Beranda/referral">Referral</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signin">Sign In</a></li>
                                  <li><a href="<?= base_url() ?>index.php/Beranda/signup">Sign Up</a></li>
                               </ul>
