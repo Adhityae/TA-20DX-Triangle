@@ -9,13 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Raysha Store</title>
+    <title>Halaman Admin</title>
 
     <!-- Custom fonts for this template-->
     <link  rel="stylesheet" type="text/css" href='<?php echo base_url("assets/fontawesome-free/css/all.min.css"); ?>'/>
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
         rel="stylesheet">   
 
     <!-- Custom styles for this template-->
@@ -104,33 +104,33 @@
                 <!-- End of Topbar -->
 
                 <div class="container-fluid">
-    <button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambah_barang"><i class="fas fa-plus fa-sm"></i> Tambah Data</button>
+                <a class="btn btn-sm btn-primary mb-3" href="<?php echo base_url("Beranda/tambahData"); ?>"><i class="fas fa-plus fa-sm"></i> Tambah Data</a>
 
     <table class="table table-bordered">
         <tr>
             <th>NO</th>
-            <th>NAMA BARANG</th>
-            <th>KETERANGAN</th>
-            <th>KATEGORI</th>
-            <th>HARGA</th>
-            <th>STOK</th>
+            <th>NAMA</th>
+            <th>MATA PELAJARAN</th>
+            <th>ALAMAT</th>
+            <th>NO HP</th>
+            <th>STATUS</th>
             <th>AKSI</th>
         </tr>
         <?php
         $no=1;
-        foreach($akun_siswa as $data) : ?>
+        foreach($tbl_pelajar as $data) : ?>
 
         <tr>
             <td><?php echo $no++ ?></td>
-            <td><?php echo $data->email ?></td>
-            <td><?php echo $data->password ?></td>
-            <td><?php echo $data->username ?></td>
-            <td><?php echo $data->akses ?></td>
+            <td><?php echo $data->nama ?></td>
+            <td><?php echo $data->mata_pelajaran ?></td>
+            <td><?php echo $data->alamat ?></td>
+            <td><?php echo $data->no_hp ?></td>
             <td><?php echo $data->status ?></td>
             <td>
             <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-primary"><i class="fa-sharp fa-solid fa-plus"></i></a>        
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-danger"><i class="fa-light fa-pen-to-square"></i></a>        
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-success"><i class="fa fa-list"></i></a>        
+            <a href="<?= site_url('Beranda/edit_data' . $data->id) ?>" class="btn  btn-danger"><i class="fa fa-pencil-square" aria-hidden="true"></i></a>        
+            <a href="<?= site_url('Beranda/hapus_data' . $data->id) ?>" class="btn  btn-success"><i class="fa fa-list"></i></a>        
          </td>
             <!-- <td><?php echo anchor('admin/data_barang/edit/' .$data->id, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
             <td><?php echo anchor('admin/data_barang/hapus/' .$data->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td> -->
@@ -140,50 +140,7 @@
     </div>
 
     <!-- Modal -->
-<div class="modal fade" id="tambah_barang" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Form Input Produk</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <form action='<?php echo base_url("Beranda/tambah_aksi"); ?>' method="post" enctype="multipart/form-data">
-            <div class="form-group">
-                <label>Nama Barang</label>
-                <input type="text" name="nama_brg" class="form-control">
-            </div>    
-            <div class="form-group">
-                <label>keterangan</label>
-                <input type="text" name="keterangan" class="form-control">
-            </div>    
-            <div class="form-group">
-                <label>kategori</label>
-                <input type="text" name="kategori" class="form-control">
-            </div>    
-            <div class="form-group">
-                <label>harga</label>
-                <input type="text" name="harga" class="form-control">
-            </div>    
-            <div class="form-group">
-                <label>stok</label>
-                <input type="text" name="stok" class="form-control">
-            </div>    
-            <div class="form-group">
-                <label>Gambar</label>
-                <input type="file" name="gambar" class="form-control">
-            </div>    
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
-        </div>
-    </form>
-    </div>
-  </div>
-</div>
+
 <!-- Bootstrap core JavaScript-->
 <script src='<?php echo base_url("assets/vendor/jquery/jquery.min.js"); ?>'></script>
     <script src='<?php echo base_url("assets/vendor/bootstrap/js/bootstrap.bundle.min.js") ?>'></script>

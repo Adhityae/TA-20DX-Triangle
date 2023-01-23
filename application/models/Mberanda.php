@@ -42,9 +42,9 @@ class Mberanda extends CI_Model {
     }
 
     public function tampil_data(){
-        return $this->db->get('akun_siswa');
+        return $this->db->get('tbl_pelajar');
       }
-      public function tambah_barang($data,$table){
+      public function tambah_data($data,$table){
            $this->db->insert($table, $data);
       }
       public function edit_barang($where,$table){
