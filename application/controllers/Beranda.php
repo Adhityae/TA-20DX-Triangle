@@ -133,21 +133,21 @@ class Beranda extends CI_Controller {
 
     public function tambah_aksi()
     {
-        $email = $this->input->post('email');
-        $password = $this->input->post('password');
-        $username = $this->input->post('username');
-        $akses = $this->input->post('akses');
+        $nama = $this->input->post('nama');
+        $alamat = $this->input->post('alamat');
+        $no_hp = $this->input->post('no_hp');
         $status = $this->input->post('status');
+        $mata_pelajaran = $this->input->post('mata_pelajaran');
         $data = array(
-            'email' => $email,
-            'password' => $password,
-            'username' => $username,
-            'akses' => $akses,
+            'nama' => $nama,
+            'alamat' => $alamat,
+            'no_hp' => $no_hp,
             'status' => $status,
+            'mata_pelajaran' => $mata_pelajaran,
         );
 
-        $this->Mberanda->tambah_data($data, 'akun_siswa');
-        redirect('Beranda/admin');
+        $this->Mberanda->tambah_data($data, 'tbl_pelajar');
+        redirect('Beranda/admin');   
         
     }
 
