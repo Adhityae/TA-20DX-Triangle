@@ -155,10 +155,10 @@
                             Belum punya akun ?
                             <a href="<?= base_url() ?>index.php/Beranda/signup" style="text-decoration: none;color:black;font-weight: 600">Daftar Sekarang</a>
                         </div>
-                        <div class="text-center">
+                        <!-- <div class="text-center">
                             Masuk sebagai Admin ?
                             <a href="<?= base_url() ?>index.php/Beranda/signinadmin" style="text-decoration: none;color:black;font-weight: 600">Masuk</a>
-                        </div>
+                        </div> -->
                     </div>
                 </form>
                 <div class="text-center mt-5">
