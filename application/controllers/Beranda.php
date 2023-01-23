@@ -51,7 +51,8 @@ class Beranda extends CI_Controller {
 
 	public function admin()
 	{
-		$this->load->view('vw_admin');
+		$data['akun_siswa'] = $this->Mberanda->tampil_data()->result();
+		$this->load->view('vw_admin' ,$data);
 	}
 
 	public function signinadmin()
@@ -119,5 +120,79 @@ class Beranda extends CI_Controller {
 		}
 	}
 
+	public function Logout()
+	{
+		$this->session->sess_destroy();
+		redirect('Beranda/signin');
+	}
+
+	// public function tampil(){
+    //     $data['akun_siswa'] = $this->Mberanda->tampil_data()->result();
+    //     $this->load->view('Beranda/admin', $data);
+    // }
+
+    public function tambah_aksi()
+    {
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+        $username = $this->input->post('username');
+        $akses = $this->input->post('akses');
+        $status = $this->input->post('status');
+        $data = array(
+            'email' => $email,
+            'password' => $password,
+            'username' => $username,
+            'akses' => $akses,
+            'status' => $status,
+        );
+
+        $this->Mberanda->tambah_barang($data, 'akun_siswa');
+        redirect('Beranda/admin');
+        
+    }
+
+    public function edit($id)
+    {
+        $where = array('id' =>$id);
+        $data['akun_siswa'] = $this->Mberanda->edit_barang($where, 'akun_siswa')->result();
+        $this->load->view('Beranda/edit', $data);
+    }
+
+    public function update(){
+        $id = $this->input->post('id');
+        $email = $this->input->post('email');
+        $password = $this->input->post('password');
+        $username = $this->input->post('username');
+        $akses = $this->input->post('akses');
+        $status = $this->input->post('status');
+
+        $data = array(
+
+            'email' => $email,
+            'password' => $password,
+            'username' => $username,
+            'akses' => $akses,
+            'status' => $status
+        );
+
+        $where = array (
+            'id' => $id
+        );
+
+        $this->Mberanda->update_data($where,$data,'akun_siswa');
+        redirect('Beranda/edit');
+    }
+
+    public function hapus($id)
+    {
+        $where = array('id' => $id);
+        $this->MBeranda->hapus_data($where, 'akun_siswa');
+        redirect('Beranda/admin');
+    }
+
+	public function datasiswa()
+    {
+        $this->load->view('Beranda/data_siswa');
+    }
 }
 

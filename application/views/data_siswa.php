@@ -13,10 +13,9 @@
 
     <!-- Custom fonts for this template-->
     <link  rel="stylesheet" type="text/css" href='<?php echo base_url("assets/fontawesome-free/css/all.min.css"); ?>'/>
-    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css"
-        rel="stylesheet">   
 
     <!-- Custom styles for this template-->
     <link href='<?php echo base_url("assets/css/sb-admin-2.min.css"); ?>' rel="stylesheet"/>
@@ -50,7 +49,7 @@
             </li>
 
             <li class="nav-item active">
-                <a class="nav-link" href="<?php echo base_url('Beranda/data_siswa') ?>">
+                <a class="nav-link" href="<?php echo base_url('Beranda/datasiswa') ?>">
                     <i class="fas fa-fw fa-tachometer-alt"></i>
                     <span>Data User</span></a>
             </li>
@@ -88,14 +87,33 @@
                     </form>
                         <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
-                            <a class="nav-link dropdown-toggle" href='<?php echo base_url("Beranda/Logout"); ?>' id="userDropdown" role="button"
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Logout</span>
-                                <!-- <img class="img-profile rounded-circle"
-                                    src='<?php echo base_url("assets/images/profile_admin.jpg") ?>'> -->
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Admin</span>
+                                <img class="img-profile rounded-circle"
+                                    src='<?php echo base_url("assets/images/profile_admin.jpg") ?>'>
                             </a>
                             <!-- Dropdown - User Information -->
-                            
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
                         </li>
 
                     </ul>
@@ -104,7 +122,7 @@
                 <!-- End of Topbar -->
 
                 <div class="container-fluid">
-    <button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambah_barang"><i class="fas fa-plus fa-sm"></i> Tambah Data</button>
+    <button class="btn btn-sm btn-primary mb-3" data-toggle="modal" data-target="#tambah_barang"><i class="fas fa-plus fa-sm"></i> Tambah Barang</button>
 
     <table class="table table-bordered">
         <tr>
@@ -127,13 +145,9 @@
             <td><?php echo $data->username ?></td>
             <td><?php echo $data->akses ?></td>
             <td><?php echo $data->status ?></td>
-            <td>
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-primary"><i class="fa-sharp fa-solid fa-plus"></i></a>        
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-danger"><i class="fa-light fa-pen-to-square"></i></a>        
-            <a href="<?= site_url('Beranda/tambah_data' . $data->id) ?>" class="btn  btn-success"><i class="fa fa-list"></i></a>        
-         </td>
-            <!-- <td><?php echo anchor('admin/data_barang/edit/' .$data->id, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
-            <td><?php echo anchor('admin/data_barang/hapus/' .$data->id, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td> -->
+            <td><div class="btn btn-success btn-sm"><i class="fas fa-search-plus"></i></div></td>
+            <td><?php echo anchor('admin/data_barang/edit/' .$data->id_data, '<div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div>') ?></td>
+            <td><?php echo anchor('admin/data_barang/hapus/' .$data->id_data, '<div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div>') ?></td>
         </tr>
         <?php endforeach; ?>
     </table>    
@@ -150,7 +164,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action='<?php echo base_url("Beranda/tambah_aksi"); ?>' method="post" enctype="multipart/form-data">
+        <form action="<?php echo base_url().'admin/data_barang/tambah_aksi'?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label>Nama Barang</label>
                 <input type="text" name="nama_brg" class="form-control">
