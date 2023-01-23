@@ -51,7 +51,7 @@ class Beranda extends CI_Controller {
 
 	public function admin()
 	{
-		$data['akun_siswa'] = $this->Mberanda->tampil_data()->result();
+		$data['tbl_pelajar'] = $this->Mberanda->tampil_data()->result();
 		$this->load->view('vw_admin' ,$data);
 	}
 
@@ -146,7 +146,7 @@ class Beranda extends CI_Controller {
             'status' => $status,
         );
 
-        $this->Mberanda->tambah_barang($data, 'akun_siswa');
+        $this->Mberanda->tambah_data($data, 'akun_siswa');
         redirect('Beranda/admin');
         
     }
@@ -194,5 +194,10 @@ class Beranda extends CI_Controller {
     {
         $this->load->view('Beranda/data_siswa');
     }
+
+	public function tambahData()
+	{
+		$this->load->view('tambahData');
+	}
 }
 
